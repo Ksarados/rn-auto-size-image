@@ -20,7 +20,6 @@ yarn-error.log*
 .expo-settings.json
 
 # Build output
-dist/
 build/
 lib/
 
