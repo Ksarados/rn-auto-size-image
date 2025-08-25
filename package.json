@@ -1,0 +1,23 @@
+{
+  "name": "rn-auto-size-image",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.11",
+    "@types/react-native": "^0.72.8",
+    "typescript": "^5.9.2"
+  }
+}

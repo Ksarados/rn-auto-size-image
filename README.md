@@ -1,0 +1,1 @@
+# rn-auto-size-image
