@@ -1,1 +1,1 @@
-export { AutoSizeImage } from './components/AutoSizeImage';
+export { AutoSizeImage }  from './components/AutoSizeImage';
