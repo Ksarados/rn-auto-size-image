@@ -5,9 +5,10 @@ type AutoSizeImageProps = {
     source: any;
     style?: any;
     paddingHorizontal?: number;
+    resizeMode?: 'contain' | 'cover';
 };
 
-export const AutoSizeImage = ({ source, style, paddingHorizontal }: PropsWithChildren<AutoSizeImageProps>) => {
+export const AutoSizeImage = ({ source, style, paddingHorizontal, resizeMode }: PropsWithChildren<AutoSizeImageProps>) => {
     const screenWidth = Dimensions.get('window').width - (paddingHorizontal || 0) * 2;
     const [height, setHeight] = useState(screenWidth);
 
@@ -27,7 +28,7 @@ export const AutoSizeImage = ({ source, style, paddingHorizontal }: PropsWithChi
 
     return (
         <View style={{ width: screenWidth, height }}>
-            <Image source={source} style={[style, { width: screenWidth, height, resizeMode: 'contain' }]} />
+            <Image source={source} style={[style, { width: screenWidth, height, resizeMode: resizeMode }]} />
         </View>
     );
 }
