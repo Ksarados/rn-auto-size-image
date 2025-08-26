@@ -8,6 +8,9 @@
 npm install https://github.com/Ksarados/rn-auto-size-image.git
 ```
 
+## example
+
+
 ```tsx
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
